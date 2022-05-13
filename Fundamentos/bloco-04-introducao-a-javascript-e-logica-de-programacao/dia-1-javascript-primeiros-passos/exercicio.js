@@ -93,3 +93,12 @@ if (h % 2 !== 0 || i % 2 !== 0 || j % 2 !== 0) {
 } else {
     console.log(false);
 }
+
+const custo = -2
+const venda = 10
+if (custo < 0 || venda < 0) {
+    console.log('error');
+} 
+const custoTotal = (custo+custo*0.2)
+const lucro = (venda-custoTotal)
+console.log('O lucro total será de ', lucro*1000);
