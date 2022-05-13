@@ -94,11 +94,41 @@ if (h % 2 !== 0 || i % 2 !== 0 || j % 2 !== 0) {
     console.log(false);
 }
 
-const custo = -2
+const custo = 3
 const venda = 10
-if (custo < 0 || venda < 0) {
-    console.log('error');
-} 
 const custoTotal = (custo+custo*0.2)
 const lucro = (venda-custoTotal)
-console.log('O lucro total será de ', lucro*1000);
+if (custo < 0 || venda < 0) {
+    console.log('error');
+} else {
+    console.log('O lucro total será de ', lucro*1000);
+}
+
+const bruto = 3000
+let base
+
+if (bruto <= 1556.94) {
+    base = (bruto-bruto*0.08)
+} else if (bruto >= 1556.95 && bruto <=2594.92) {
+    base = (bruto-bruto*0.09)
+} else if (bruto >= 2594.93 && bruto <=5189.82) {
+    base = (bruto-bruto*0.11)
+} else {
+    base = (bruto-570.88)
+}
+
+let ir
+
+if (base <= 1903.98) {
+    ir = 0
+} else if (base >= 1903.99 && base <= 2826.65) {
+   ir = 0.075*base-142.80
+} else if (base >= 2826.66 && base <= 3751.05) {
+    ir = 0.15*base-354.80
+}else if (base >= 3751.06 && base <= 4664.68) {
+    ir = 0.225*base-636.13
+} else {
+    ir = 0.275*base-869.36
+}
+
+console.log('Salário liquido ', base - ir);
