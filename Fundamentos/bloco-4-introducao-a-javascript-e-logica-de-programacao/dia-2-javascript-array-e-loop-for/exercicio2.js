@@ -37,3 +37,28 @@ if (impar===0){
     }else{
         console.log(impar);
     }
+
+// exercício 7
+let menorValor = numbers[0]
+for (let index = 0; index < numbers.length; index+= 1) {
+    let numero = numbers[index]
+    if (numero < menorValor){
+        menorValor = numero
+    }
+}
+console.log(menorValor);
+
+// exercício 8
+let arrayNova = []
+let size = 26
+for (let index = 1; index < size; index+= 1) {
+    arrayNova.push (index)   
+}
+console.log (arrayNova);
+
+// exercício 9
+let resultados = []
+for (let index = 1; index < size; index += 1){
+    resultados.push (index / 2)
+}
+console.log(resultados);
