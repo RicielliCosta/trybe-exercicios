@@ -48,16 +48,18 @@
         - document.getElementsByClassName()
         - document.getElementsByTagName()
  Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+    document.getElementsByTagName('p')[0].innerText = 'Formado, trabalhando com programação e aprendendo outras linguagens de programação'
  Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+    document.getElementsByClassName('main-content')[0].style.backgroundColor =('rgb(76,164,109)')
  Crie uma função que mude a cor do quadrado vermelho para branco.
+    document.getElementsByClassName('main-content')[0].children[0].style.backgroundColor = ('white')
  Crie uma função que corrija o texto da tag <h1>.
+    document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - JavaScripit'
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+
         */
-       let a = document.getElementsByTagName('p');
-       for (let i = 0; i = a.length; i +=1){
-           a[i].innerText = 'Formado, trabalhando com programação e aprendendo outras linguagens de programação'
-       }
+
     </script>
   </body>
 </html>
