@@ -80,6 +80,17 @@
       createSete.src = 'https://picsum.photos/200'
       createSete.className = 'small-image'
       createCinco.appendChild(createSete)
+      let valores = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+      let listaValores = document.createElement('ul')
+      for (let index=0; index<valores.length;index+=1){
+          let valor = valores[index]
+
+      let valorItem = document.createElement('li')
+      valorItem.innerText = valor
+
+      listaValores.appendChild(valorItem)
+      }
+      createSeis.appendChild(listaValores)
     </script>
   </body>
 </html>
