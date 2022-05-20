@@ -61,10 +61,25 @@
       let createUm = document.createElement('h1')
       document.querySelector('body').appendChild(createUm)
       createUm.innerText = 'Exercício 5.2 - JavaScript DOM'
-      let createDois = document.createElement('main').className = 'main-content'
+      let createDois = document.createElement('main')
+      createDois.className = 'main-content'
       document.querySelector('body').appendChild(createDois)
-      let createTres = document.createElement('section').className = 'center-content'
+      let createTres = document.createElement('section')
+      createTres.className = 'center-content'
       createDois.appendChild(createTres)
+      let createQuatro = document.createElement('p')
+      createTres.appendChild(createQuatro)
+      createQuatro.innerText = 'Colocando algum texto'
+      let createCinco = document.createElement('section')
+      createCinco.className = 'left-content'
+      createDois.appendChild(createCinco)
+      let createSeis = document.createElement('section')
+      createSeis.className = 'right-content'
+      createDois.appendChild(createSeis)
+      let createSete = document.createElement('img')
+      createSete.src = 'https://picsum.photos/200'
+      createSete.className = 'small-image'
+      createCinco.appendChild(createSete)
     </script>
   </body>
 </html>
