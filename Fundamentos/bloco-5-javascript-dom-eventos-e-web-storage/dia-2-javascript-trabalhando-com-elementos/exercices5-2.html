@@ -91,6 +91,29 @@
       listaValores.appendChild(valorItem)
       }
       createSeis.appendChild(listaValores)
+      let createOito = document.createElement('h3')
+      let createNove = document.createElement('h3')
+      let createDez = document.createElement('h3')
+      createDois.appendChild(createOito)
+      createDois.appendChild(createNove)
+      createDois.appendChild(createDez)
+      createUm.className = 'title'
+      createOito.className = 'description'
+      createNove.className = 'description'
+      createDez.className = 'description'
+      createDois.removeChild(createCinco)
+      createSeis.style.marginRight = 'auto'
+      createDois.style.backgroundColor = 'green'
+      listaValores.className = 'lista'
+      let itensDaLista = document.querySelectorAll('.lista')
+
+      for(let index=0; index<itensDaLista.length; index+=1){
+        let item = itensDaLista[index]
+
+        if(item.innerText.includes('Nove')){
+          listaValores.removeChild (item)
+        }
+      }
     </script>
   </body>
 </html>
