@@ -44,3 +44,13 @@ function createDaysOfTheWeek() {
     };
     
   createDaysOfTheMes()
+
+  function feriadoBtn(string) {
+      let btnFeriado = document.querySelector('.buttons-container');
+      let feriado = document.createElement('button')
+      feriado.innerText = (string);
+      feriado.id = 'btn-holiday'
+      btnFeriado.appendChild(feriado)
+  }
+
+  feriadoBtn('Feriados')
