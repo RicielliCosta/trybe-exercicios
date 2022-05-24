@@ -55,15 +55,29 @@ function createDaysOfTheWeek() {
 
   feriadoBtn('Feriados')
 
-  function botaoFeriado() {
-      let buttonFeriado = document.getElementById('btn-holiday')
-      buttonFeriado.addEventListener('click', clicando)
-      let dayHolidayClick = document.querySelectorAll('.holiday')
-      function clicando() {
-          for(let index=0; index<dayHolidayClick.length; index+=1){
-              let styleFeriado = dayHolidayClick[index]
-              
+  function clickF() {
+      let buttonF = document.getElementById('btn-holiday')
+      let holidays = document.querySelectorAll('.holiday')
+
+      buttonF.addEventListener('click', function(){
+          for(let index = 0; index<holidays.length; index += 1){
+            if (holidays[index].style.backgroundColor === 'green'){
+                holidays[index].style.backgroundColor = 'rgb(238,238,238)'
+            }else{
+                holidays[index].style.backgroundColor = 'green';
+            }
           }
-      }
+      })
+    }
+    clickF()
+
+
+  function sextaBtn(string2) {
+      let btnSexta = document.querySelector('.buttons-container');
+      let sextaButton = document.createElement('button')
+      sextaButton.innerText = (string2);
+      sextaButton.id = 'btn-friday'
+      btnSexta.appendChild(sextaButton)
   }
-  botaoFeriado()
+  
+  sextaBtn('Sexta-feira')
