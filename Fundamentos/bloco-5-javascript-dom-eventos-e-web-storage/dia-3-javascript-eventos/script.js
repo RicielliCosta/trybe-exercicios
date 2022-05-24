@@ -54,3 +54,16 @@ function createDaysOfTheWeek() {
   }
 
   feriadoBtn('Feriados')
+
+  function botaoFeriado() {
+      let buttonFeriado = document.getElementById('btn-holiday')
+      buttonFeriado.addEventListener('click', clicando)
+      let dayHolidayClick = document.querySelectorAll('.holiday')
+      function clicando() {
+          for(let index=0; index<dayHolidayClick.length; index+=1){
+              let styleFeriado = dayHolidayClick[index]
+              
+          }
+      }
+  }
+  botaoFeriado()
