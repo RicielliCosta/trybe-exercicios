@@ -6,67 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="form-header">
-        <h1>TrybeTrip</h1>
+    <header class="container mb-3" >
+        <h1 class="display-2">TrybeTrip</h1>
     </header>
-    <form action="" method="get" enctype="multipart/form-data" class="speaker-form">
-        <div class="line-content">
-            <label for="nome-completo">Nome completo:</label><br>
-                <input type="text" name="nome" id="nome-completo" placeholder="Digite seu nome aqui" required minlength="10" maxlength="40">
+    <form class="form-floating" action="" method="get" enctype="multipart/form-data" >
+        <div class="container mb-3">
+            <label class="form-label" for="nome-completo">Nome completo:</label>
+                <input class="form-control" type="text" name="nome" id="nome-completo" placeholder="Digite seu nome aqui" required minlength="10" maxlength="40">
         </div>
-        <div class="line-content">
-            <label for="email-id">Email:</label><br>
-                <input type="email" name="email" id="email-id" placeholder="Digite seu email aqui" minlength="10" maxlength="50">
+        <div class="container mb-3">
+            <label class="form-label" for="email-id">Email:</label>
+                <input class="form-control" type="email" name="email" id="email-id" placeholder="Digite seu email aqui" minlength="10" maxlength="50">
         </div>
-        <div class="line-content">
-            <p>Destino Preferido:</p>
+        <div class="container mb-3">
+            <p class="form-label">Destino Preferido:</p>
 
-            <label for="city">
-            <input type="radio" name="type" id="city" value="cid"> Cidade 
+            <label class="form-label" for="city">
+            <input class="form-check-input" type="radio" name="type" id="city" value="cid"> Cidade 
             </label><br>
             
-            <label for="camp">
-            <input type="radio" name="type" id="camp" value="cam"> Campo 
+            <label class="form-label" for="camp">
+            <input class="form-check-input" type="radio" name="type" id="camp" value="cam"> Campo 
             </label><br>
 
-            <label for="beach">
-            <input type="radio" name="type" id="beach" value="pra"> Praia 
+            <label class="form-label" for="beach">
+            <input class="form-check-input" type="radio" name="type" id="beach" value="pra"> Praia 
             </label><br>
 
-            <label for="montain">
-            <input type="radio" name="type" id="montain" value="mon"> Montanha
+            <label class="form-label" for="montain">
+            <input class="form-check-input" type="radio" name="type" id="montain" value="mon"> Montanha
             </label>
             </select>
         </div>
-        <div class="line-content">
-            <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
-            <textarea name="abstract" id="abstract-id" maxlength="500"></textarea>
+        <div class="container mb-3">
+            <p class="form-label">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+            <textarea class="form-control" name="abstract" id="abstract-id" maxlength="500"></textarea>
         </div>
-        <div class="line-content">
-            <label for="date-id">Qual a melhor data para realizar sua viagem?</label>
-            <input type="date" name="date" id="date-id">
+        <div class="container mb-3">
+            <label class="form-label" for="date-id">Qual a melhor data para realizar sua viagem?</label>
+            <input class="form-control" type="date" name="date" id="date-id">
         </div>
-        <div class="line-content">
-            <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
-            <label for="yes">
-                <input type="radio" name="confirm" id="yes" value="sim"> Sim 
+        <div class="container mb-3">
+            <p class="form-label">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
+            <label class="form-label" for="yes">
+                <input class="form-check-input" type="radio" name="confirm" id="yes" value="sim"> Sim 
                 </label><br>
                 
-                <label for="no">
-                <input type="radio" name="confirm" id="no" value="nao"> Não 
+                <label class="form-label" for="no">
+                <input class="form-check-input" type="radio" name="confirm" id="no" value="nao"> Não 
                 </label>
         </div>
-        <div class="line-content">
+        <div class="container mb-3">
             <label for="agree">
-            <input type="checkbox" name="agree" id="agree" value="yes"> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+            <input class="form-check-input" type="checkbox" name="agree" id="agree" value="yes"> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
         </label>
         </div>
-        <button class="line-content" type="submit" id="botao"> Enviar Formulário </button>
-        <button class="line-content" type="reset" id="reset">Limpar</button>
+        <button class="btn btn-outline-success" type="submit" id="botao"> Enviar Formulário </button>
+        <button class="btn btn-outline-warning" type="reset" id="reset">Limpar</button>
     </form>
     <p id="answers"></p>
     <script src="script.js"></script>
