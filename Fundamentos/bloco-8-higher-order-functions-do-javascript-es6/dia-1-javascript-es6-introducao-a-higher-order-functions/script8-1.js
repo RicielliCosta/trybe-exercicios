@@ -1,0 +1,1 @@
+const func = (nomeCompleto) => ({ nomeCompleto, email })
